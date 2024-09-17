@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.actor != 'github-classroom[bot]' && ${{ !startsWith(github.repository , 'UNOTeaching/') }}
     steps:
+    - name: "Echo"
+      run: echo "${{ github.repository }}"
+      run: echo "${{ !startsWith(github.repository , 'UNOTeaching/') }}"
     - name: Checkout code
       uses: actions/checkout@v4
       # This is where you place your autograding tests
