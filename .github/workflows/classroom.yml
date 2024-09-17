@@ -12,15 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     if: github.actor != 'github-classroom[bot]' && github.repository_owner != 'UNOTeaching'
     steps:
-    - name: "Echo"
-      env:
-        GH_REPO: ${{ github.repository }}
-        GH_REPO_O: ${{ github.repository_owner }}
-        GH_T: ${{ !startsWith(github.repository , 'UNOTeaching/') }}
-      run: |
-        echo "$GH_REPO"
-        echo "$GH_REPO_O"
-        echo "$GH_T"
     - name: Checkout code
       uses: actions/checkout@v4
       # This is where you place your autograding tests
