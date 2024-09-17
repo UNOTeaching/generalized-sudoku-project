@@ -68,20 +68,50 @@ Finally, update the GitHub repository typing the command
 ```sh
 git push
 ```
+Go to your repository in https://github.com.
 After a few minutes you will be able to see the result of the test in the **Actions** tab.
-**You should have obtained 5 points.**
+\
+![Action Button](img/github-action-button.png)
+\
+It may show something similar to the following:
+\
+![Autograder Running](img/autograder-running.png)
+\
+This means that the autograder is still running. Once it terminates, it looks as follows:
+\
+![Autograder Fail](img/autograder-fail.png)
+\
+The <img src="img/red-x.png" alt="red X" width="15"/>  icon on the left means that some tests have fail. Do not worry, we are just starting.
+You can see more details by clicking on ```creating group.txt``` and something similar to the following will be displayed.
+\
+![Autograder Detailed Report](img/autograder-score.png)
+\
+As shown here, **You should have obtained 10 points.**
+By clicking in the area surrounded in red a report will display.
+\
+![Autograder Score](img/autograder-table.png)
+\
+Here we can see that we obtained 5 points for each of the tests for Question 0 and we have obtained no points on the other questions as expected.
 
-You can get more information about the result of the test by clicking successively on:
+Once you correctly complete the project, you should see something similar to the following:
+\
+![Autograder Pass](img/autograder-pass.png)
+\
+\
+![Autograder Score](img/autograder-table-complete.png)
+\
+
+<!-- You can get more information about the result of the test by clicking successively on:
 1. The specific test.
 2. "Autograding".
-3. "Run education/autograding@v1".
+3. "Run education/autograding@v1". -->
 
-Now copy the file ```sudoku.lp``` to ```sudoku1a.lp``` and update the repository following the same steps as above. Note that when you create a new commit you should give a meaningful comment. For instance, now you can create the new commit using the command
+<!-- Now copy the file ```sudoku.lp``` to ```sudoku1a.lp``` and update the repository following the same steps as above. Note that when you create a new commit you should give a meaningful comment. For instance, now you can create the new commit using the command
 ```sh
 git commit -am"creating sudoku1a.lp"
-```
+``` -->
 Every time you push a new commit, your solution will be tested automatically. This also applies to the following questions.
-**You should have obtained now 10 points.**
+<!-- **You should have obtained now 10 points.** -->
 
 We recommend that you create new commits frequently when doing the rest of this project. If at some point you realize you did a mistake, you can revert to a previous commit. Pushing to the GitHub repository may also help you in case that you accidentally lose your local copy. If you have doubts about Git or Github, or you can learn more about it, you can read the tutorial in following link:
 
