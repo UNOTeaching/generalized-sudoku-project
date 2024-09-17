@@ -10,7 +10,7 @@ permissions:
 jobs:
   run-autograding-tests:
     runs-on: ubuntu-latest
-    if: github.actor != 'github-classroom[bot]' && ${{ !startsWith(github.repository , 'https://github.com/UNOTeaching//') }}
+    if: github.actor != 'github-classroom[bot]' && ${{ !startsWith(github.repository , 'UNOTeaching/') }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
