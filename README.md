@@ -143,14 +143,14 @@ Solutions for subsequent questions can be found by changing the folder ```q1a```
 ### Question 1b (10 points):
 For this question, you should copy ```sudoku1a.lp``` to ```sudoku1b.lp``` and modify the latter. All stable models of this new program must contain facts of the form:
 ```
-subgrid(x,y,g)
+subgrid(r,c,g)
 ```
-for each cell (x,y) in the board where g is the subgrid each belongs.
+for each cell (r,c) in the board where g is the subgrid each belongs:  
+- The top left most four cells belong to the subgrid 1.  
+- The top right most four cells belong to the subgrid 2.  
+- The bottom left most four cells belong to the subgrid 3.  
+- The bottom right most four cells belong to the subgrid 4.
 
-The top left most four cells belong to the subgrid 1.
-The top right most four cells belong to the subgrid 2.
-The bottom left most four cells belong to the subgrid 3.
-The bottom right most four cells belong to the subgrid 4.
 You can automatically test your code running
 ```sh
 python autograder.py --question=1b
