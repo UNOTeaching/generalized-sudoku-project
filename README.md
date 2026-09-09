@@ -46,7 +46,7 @@ The content of the **main** branch of your GitHub repository at the time of the 
 
 **Start as soon as possible to avoid running out of time.**
 
-Do not modify the file ```autograder.py``` nor any of the content of the directories ```.git```, ```.github```, ```img```, ```instances```, ```questions``` and ``` solutions```. Modifying some of this directories may prevent your code to work or cause lost of your progress. 
+Do not modify the file ```autograder.py``` nor any of the content of the directories ```.git```, ```.github```, ```img```, ```instances```, ```questions``` and ``` solutions```. Modifying some of this directories may prevent your code to work or cause lost of your progress.
 
 **Academic Dishonesty**: We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. Modifying the behavior of the autograder in any way is also cheating. We trust you all to submit your own work only and to do it in honest way; please don't let us down. If you do, we will pursue the strongest consequences available to us.
 
@@ -64,7 +64,7 @@ Commit the change to the repository with the command
 ```sh
 git commit -am"creating group.txt"
 ```
-Finally, update the GitHub repository typing the command 
+Finally, update the GitHub repository typing the command
 ```sh
 git push
 ```
@@ -77,39 +77,12 @@ It may show something similar to the following:
 \
 ![Autograder Running](img/autograder-running.png)
 \
-This means that the autograder is still running. Once it terminates, it looks as follows:
-\
-![Autograder Fail](img/autograder-fail.png)
-\
-The <img src="img/red-x.png" alt="red X" width="15"/>  icon on the left means that some tests have fail. Do not worry, we are just starting.
-You can see more details by clicking on ```creating group.txt``` and something similar to the following will be displayed.
+This means that the autograder is still running. Once it terminates, it will show a green icon.
+You can see more details by clicking on the icon and something similar to the following will be displayed.
 \
 ![Autograder Detailed Report](img/autograder-score.png)
 \
-As shown here, **You should have obtained 10 points.**
-By clicking in the area surrounded in red a report will display.
-\
-![Autograder Score](img/autograder-table.png)
-\
-Here we can see that we obtained 5 points for each of the tests for Question 0 and we have obtained no points on the other questions as expected.
-
-Once you correctly complete the project, you should see something similar to the following:
-\
-![Autograder Pass](img/autograder-pass.png)
-\
-\
-![Autograder Score](img/autograder-table-complete.png)
-\
-
-<!-- You can get more information about the result of the test by clicking successively on:
-1. The specific test.
-2. "Autograding".
-3. "Run education/autograding@v1". -->
-
-<!-- Now copy the file ```sudoku.lp``` to ```sudoku1a.lp``` and update the repository following the same steps as above. Note that when you create a new commit you should give a meaningful comment. For instance, now you can create the new commit using the command
-```sh
-git commit -am"creating sudoku1a.lp"
-``` -->
+In this case we have completed the project and obtained the maximun grade. As you are just started, you should **have obtained 10 points** corresponding to questions ```0a``` and ```0b```.
 Every time you push a new commit, your solution will be tested automatically. This also applies to the following questions.
 <!-- **You should have obtained now 10 points.** -->
 
@@ -145,10 +118,10 @@ For this question, you should copy ```sudoku1a.lp``` to ```sudoku1b.lp``` and mo
 ```
 subgrid(r,c,g)
 ```
-for each cell (r,c) in the board where g is the subgrid each belongs:  
-- The top left most four cells belong to the subgrid 1.  
-- The top right most four cells belong to the subgrid 2.  
-- The bottom left most four cells belong to the subgrid 3.  
+for each cell (r,c) in the board where g is the subgrid each belongs:
+- The top left most four cells belong to the subgrid 1.
+- The top right most four cells belong to the subgrid 2.
+- The bottom left most four cells belong to the subgrid 3.
 - The bottom right most four cells belong to the subgrid 4.
 
 You can automatically test your code running
@@ -171,7 +144,7 @@ You can automatically test your code running
 python autograder.py --question=1c
 ```
 ## Question 2: 9x9 Sudoku (30 points)
-For this question, we will represent a 9x9 Sudoku. Start by copying the file to ```sudoku1c.lp``` to ```sudoku2.lp``` and modify the later to solve the 9x9 sudoku. 
+For this question, we will represent a 9x9 Sudoku. Start by copying the file to ```sudoku1c.lp``` to ```sudoku2.lp``` and modify the later to solve the 9x9 sudoku.
 
 To receive credit for this question, the program must correctly solve all instances in the folder instances/9x9. Solutions to this question can be found in the folder solutions/q2.
 
